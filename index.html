@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input with Number Appending</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+
+        #chatBox {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+
+        .message {
+            margin-bottom: 5px;
+        }
+
+
+        #userInput {
+            padding: 10px;
+            font-size: 16px;
+            width: 70%;
+        }
+
+
+        #sendButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        #title {
+            font-size: 50px;
+            font-weight : 900;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 id="title">뭐든지<br>물어보세요!</h1>
+    <div id="chatBox"></div>
+    <input type="text" id="userInput" placeholder="텍스트를 입력하세요">
+    <button id="sendButton" onclick="appendText()">전송</button>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
